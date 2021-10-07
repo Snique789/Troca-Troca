@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>teste rapido</title>
+	<style type="text/css">
+		div[data-type='carro']{
+			border:solid 3px tomato;
+		}
+		div[data-type='console']{
+			border:solid 3px lightgreen;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		function on() {
+			var a = document.getElementsByClassName('produtos');
+			a[0].style.backgroundColor = "tomato";
+		}
+	</script>
+	<div class="produtos" data-type="carro">
+		Carros
+	</div>
+	<br>
+	<div class="produtos" data-type="console">
+		Consoles
+	</div>
+	<button onclick="on()">Sumir</button>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+    <title>Header</title>
+    <style type="text/css">
+    	*{
+    		margin: 0;
+    		padding: 0;
+    		outline: none;
+    	}
+
+		body{
+			font-family: Helvetica;
+			font-size: 1.3rem;
+		}
+		#ul-conta{
+			list-style: none;
+			padding: 2px;
+			cursor: default;
+			border-radius: 5px;
+		}
+		.menu{
+			background-color: orange;
+			list-style:none;
+			display: flex;
+			width: 100%;
+		}
+		.menu li{
+			position:relative;
+			float:left;
+		}
+		.menu li a{
+			margin:auto 0 auto 0;
+			color:#fff;
+			text-decoration:none; 
+			padding:10px 15px; 
+			display:block;
+		}
+
+		.menu li a:hover{
+			color:#f9f9f9;
+			text-shadow:0px 0px 5px #fff;
+		}
+		li{
+			margin:auto 0 auto 0;
+		}
+		li > a{
+			font-size: 1.5rem;
+			font-weight: 500;
+		}
+		input{
+			padding-left: 15px;
+			font-size: 1.3rem;
+			color:black;
+			background:none;
+			border:none;
+			outline: none;
+			height: 2.3rem;
+			min-width: 450px;
+		}
+		div#search{
+			margin:auto 0 auto 0;
+			border:1px rgba(0,0,0,0.) solid;
+			height: 2.3rem;
+			background:white;
+			border-radius: 0 50px 50px 0;
+		}
+		.menu li ul{
+			position:absolute;
+			top:65px;
+			left:0;
+			background:orange;
+			display:none;
+		}
+		div:hover ul, li.over ul{
+			display:block;
+		}
+		.menu li ul li{
+			border:1px solid#FF7800;
+			border-radius: 5px;
+			background:rgba(250,150,25,.8);
+			margin:0 15px 10px 15px;
+			display:block;
+			width:200px;
+		}
+		.menu li:hover ul, .menu li.over ul{
+			display:block;
+			opacity: 100%;
+		}
+		#conta{
+			width: 50px;
+			height: 50px;
+			padding: 10px;
+			margin: 0 auto auto; 
+			float: right;
+			cursor: pointer;
+			border-radius: 50px;
+		}
+		#logo{
+			width:auto;
+			height:3rem;
+		}
+		p{
+			color: #FFF;
+			margin:auto 0 auto 0;
+		}
+		li{
+			margin:0 auto 0 auto;
+			display: inline-flex;
+			cursor: pointer;
+		}
+		a[img="logo"]{
+			font-family: burbank big condensed;
+			font-size: 2rem;
+		}
+		img[img="seta"]{
+			margin: auto 0 auto 10px;
+			width: auto;
+			height: 20px;
+		}
+		#miniSearch{
+			width: 35px;
+			height: 100%;
+			background-color: rgba(255,100,0);
+			float: left;
+		}
+		#miniSearch img{
+			margin:5px;
+			width: 25px;
+			height: auto;
+		}
+		#ul-conta li a {
+			font-size: 1.5rem;
+			font-weight: 500;
+		}
+    </style>	
+</head>
+<body>
+	<nav>
+		<ul class="menu">
+			<li><a href="#" img="logo">TROCA - TROCA</a></li>
+			<li>
+				<div id="search">
+					<div id="miniSearch"><img src="upload/64673.png" alt=""></div>
+					<input type="text" name="" placeholder="O que você está procurando?">
+				</div>
+			</li>
+			<li><a href="#">Login</a></li>
+			<li><a href="#">Anunciar</a></li>
+	  		<li>
+		  		<img id="conta" src="upload/download.png" alt="">
+		  		<p>SNIQUE789</p>
+		  		<img img="seta" src="upload/setaBaixo.png" alt="">
+	         	<ul id="ul-conta">
+					<li><a href="#">Produtos</a></li>
+					<li><a href="#">Mensagens</a></li>
+	       		</ul>
+			</li>	
+			<p></p>
+		</ul>
+	</nav>
+</body>
+</html>
